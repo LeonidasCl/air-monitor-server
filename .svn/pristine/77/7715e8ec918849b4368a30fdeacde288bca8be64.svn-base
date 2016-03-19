@@ -1,0 +1,7 @@
+<?php
+
+	if($usrname=='test'&&$usrpwd=='testuser')
+		echo $arr2;
+	else
+		echo file_get_contents("php://input");
+?>

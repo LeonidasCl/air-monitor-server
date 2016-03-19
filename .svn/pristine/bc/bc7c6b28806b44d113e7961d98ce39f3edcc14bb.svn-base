@@ -1,0 +1,9 @@
+<?php
+	@header('Content-type:text/json'); 
+	$temp=$_GET['username'];
+
+	$arr1 = array('name'=>$temp,'pwd'=>2);
+	$arr1 = json_encode($arr1);
+
+	echo $arr1;
+?>

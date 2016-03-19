@@ -1,0 +1,7 @@
+<?php
+	@header('Content-type:text/json'); 
+	$temp=$_GET['username'];
+	$json={"surname":"tmp","surpwd":"pwd"};
+
+	echo $json;
+?>

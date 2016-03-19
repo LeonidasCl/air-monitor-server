@@ -1,0 +1,12 @@
+<?php
+
+	$usrname=$_GET['username'];
+	$usrpwd=$_GET['password'];
+	$token=$_GET['token'];
+
+	$arr1 = array('responseCode'=>1,'userInfo'=>array('username'=>'username','token'=>'token','avatar'=>'http://img2.imgtn.bdimg.com/it/u=4263234118,1720885465&fm=21&gp=0.jpg','subscribenodes'=>'东门&梅园&橘园&图书馆&计软楼&西门&北门&桃园','nodeid'=>'163&50&160&137&76&99&218&170','nodecomment'=>'傻逼安卓&安卓傻逼&天下PHP&最牛逼&没有针对&没说你垃圾&是在座的语言&都垃圾'));
+	$arr1 = json_encode($arr1);
+
+	if(($usrname=='username'&&$usrpwd=='password')||($usrname=='username'&&$token=='token'))
+	echo $arr1;
+?>

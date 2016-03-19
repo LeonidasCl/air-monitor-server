@@ -1,0 +1,13 @@
+<?php
+
+	$usrname=$_POST['username'];
+	$usrpwd=$_POST['password'];
+
+	$arr2 = array('user'=>array('username'=>'testuser'),'latest'=>array('latest'=>'test'),'hottest'=>array('hottest'=>'test'));
+	$arr2 = json_encode($arr2);
+
+	if($usrname=='test'&&$usrpwd=='testuser')
+		echo $arr2;
+	else
+		echo file_get_contents("php://input");
+?>

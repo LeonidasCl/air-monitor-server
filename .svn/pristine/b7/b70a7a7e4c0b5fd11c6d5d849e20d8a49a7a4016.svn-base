@@ -1,0 +1,15 @@
+<?php
+
+	$token=$_GET['publicdata'];
+
+	if($token=='get'){
+	$arr1 = array('publicdatas'=>'163&50&160&137&76&99&218&170','nodes'=>'东门&梅园&橘园&图书馆&计软楼&西门&北门&桃园');
+	$arr1 = json_encode($arr1);
+}
+
+	if($token=='detail'){
+		$nodeid=$_GET['nodeid'];
+	}
+
+	echo $arr1;
+?>

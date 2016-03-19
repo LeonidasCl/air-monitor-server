@@ -1,0 +1,12 @@
+<?php
+	@header('Content-type:text/json'); 
+
+	$usrname=$_GET['username'];
+	$usrpwd=$_GET['password'];
+
+	$arr1 = array('responseCode'=>1,'UserInfo'=>array('username'=>$usrname,'password'=>'password','avatar'=>'http://img2.imgtn.bdimg.com/it/u=4263234118,1720885465&fm=21&gp=0.jpg','publicData'=>'163&50&160&137&76&99&218&170'));
+	$arr1 = json_encode($arr1);
+
+	if($usrname=='username'&&$usrpwd=='password')
+	echo $arr1;
+?>
